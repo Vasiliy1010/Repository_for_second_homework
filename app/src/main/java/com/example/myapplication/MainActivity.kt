@@ -35,13 +35,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun TextSwitcherApp(modifier: Modifier = Modifier) {
-    // Список текстовых вариантов
-    val texts = listOf(
-        "Первый вариант текста",
-        "Второй вариант текста",
-        "Третий вариант текста"
-    )
-    // Состояния: индекс текущего текста и счётчик нажатий
+    val texts = listOf("Иван", "Петр", "Сергей")
     var textIndex by remember { mutableStateOf(0) }
     var clickCount by remember { mutableStateOf(0) }
 
@@ -50,12 +44,10 @@ fun TextSwitcherApp(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        // Отображение текста с счётчиком
         Text(
             text = "${texts[textIndex]} (Вы нажали $clickCount раз)",
             style = MaterialTheme.typography.headlineSmall
         )
-        // Кнопка переключения
         Button(
             onClick = {
                 clickCount++
