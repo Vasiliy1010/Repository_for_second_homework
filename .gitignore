@@ -1,0 +1,70 @@
+# Gradle
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Android
+local.properties
+*.iml
+/.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Kotlin Symbol Processing
+.ksp/
+
+# Android Studio navigation editor temp files
+.navigation/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Signing files
+*.pem
+*.p12
+
+# Google Services (e.g., APIs or Firebase)
+/google-services.json
+/fastlane/metadata/android/*/service_account.json
+
+# IntelliJ
+*.iws
+*.ipr
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries/
+.idea/libraries/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs and reports
+*.log
+*.hprof
+
+# Crashlytics
+crashlytics.properties
+
+# NDK
+obj/
+*.so
+
+# JetBrains IDE config backups
+*.orig
+
+# Build artifacts
+*.apk
+*.ap_
+*.aab
+
+# Generated files
+generated/
+
+# Misc
+*.properties
+local_*
