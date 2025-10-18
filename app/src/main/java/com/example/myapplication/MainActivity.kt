@@ -45,17 +45,22 @@ fun TextSwitcherApp(modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "${texts[textIndex]} (Вы нажали $clickCount раз)",
-            style = MaterialTheme.typography.headlineSmall
+            text = "Меняющийся текст: ${texts[textIndex]}",
+            style = MaterialTheme.typography.headlineMedium
+        )
+        Text(
+            text = "(Вы нажали $clickCount раз)",
+            style = MaterialTheme.typography.headlineMedium
         )
         Button(
             onClick = {
                 clickCount++
                 textIndex = (textIndex + 1) % texts.size
             },
-            modifier = Modifier.padding(top = 16.dp)
+
+            modifier = Modifier.padding(top = 20.dp)
         ) {
-            Text("Поменять текст")
+            Text("Нажмите, чтобы поменять текст")
         }
     }
 }
