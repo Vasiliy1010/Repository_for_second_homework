@@ -68,6 +68,18 @@ fun TextSwitcherApp(modifier: Modifier = Modifier) {
         ) {
             Text("Нажмите, чтобы поменять текст")
         }
+        Button(
+            onClick = {
+                clickCount = 0
+            },
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color.Black,
+                contentColor = Color.White
+            ),
+            modifier = Modifier.padding(top = 20.dp)
+        ) {
+            Text("Нажмите, чтобы cбросить число нажатий")
+        }
     }
 }
 
