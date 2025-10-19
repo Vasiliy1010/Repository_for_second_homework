@@ -41,6 +41,7 @@ fun TextSwitcherApp(modifier: Modifier = Modifier) {
     var textIndex by remember { mutableStateOf(0) }
     var clickCount by remember { mutableStateOf(0) }
 
+
     Column(
         modifier = modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
